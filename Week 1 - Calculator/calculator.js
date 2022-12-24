@@ -29,7 +29,7 @@ document.querySelectorAll(".eval").forEach(function (number) {
     if (result_text === "0") {
       result_text = "";
     }
-    result_text += event.target.id;
+    result_text += event.target.innerHTML;
     updateText();
   });
 });

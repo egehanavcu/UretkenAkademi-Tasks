@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -27,64 +28,53 @@ body {
 .result {
   width: 100%;
   text-align: right;
-  font-size: 8vw; /* 8vw */
+  font-size: 8vw;
   font-weight: 100;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
 }
 
-.button {
+.btn {
   width: calc((100% - 45px) / 4);
   aspect-ratio: 1 / 1;
-  display: inline-block;
   border-radius: 50%;
   font-size: 3.3vw;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.button.light-gray {
+.btn.light-gray {
   background-color: #a5a5a5;
   color: black;
 }
 
-.button.dark-gray {
+.btn.dark-gray {
   background-color: #333333;
 }
 
-.button.orange {
+.btn.orange {
   background-color: #fe9505;
 }
 
-.button.last-row {
+.btn.last-row {
   width: calc((100% - 30px) / 4);
 }
 
-.button.last-row-zero {
+.btn.last-row-zero {
   width: calc((100% - 30px) / 2);
   aspect-ratio: 2 / 1;
   border-radius: 64px;
 }
 
-/* Extra small devices */
 @media only screen and (max-width: 600px) {
   .main-container {
     width: 60%;
   }
 }
 
-/* Small devices */
 @media only screen and (min-width: 600px) {
   .main-container {
     width: 50%;
   }
 }
 
-/* Medium devices */
 @media only screen and (min-width: 768px) {
   .main-container {
     width: 30%;
