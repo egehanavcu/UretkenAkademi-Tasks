@@ -29,6 +29,7 @@ document.querySelectorAll(".eval").forEach(function (number) {
     if (result_text === "0") {
       result_text = "";
     }
+    result_text = result_text.replaceAll("X", "*");
     result_text += event.target.innerHTML;
     updateText();
   });
