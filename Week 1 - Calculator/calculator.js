@@ -20,7 +20,7 @@ document.querySelector("#paranthesis").addEventListener("click", function () {
 });
 
 document.querySelector("#equals").addEventListener("click", function (event) {
-  result_text_div.innerHTML = eval(result_text);
+  result_text_div.innerHTML = eval(result_text.replace("X", "*"));
   result_text = result_text_div.innerHTML;
 });
 
