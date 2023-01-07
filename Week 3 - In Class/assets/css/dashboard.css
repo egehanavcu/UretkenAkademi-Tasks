@@ -1,0 +1,63 @@
+@import "base.css";
+
+.sidebar-items {
+  justify-content: space-between;
+}
+
+.sidebar-item > * {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.sidebar-item h3 {
+  color: #ffffff;
+}
+
+.logout-item {
+  margin-bottom: 0;
+}
+
+.logout-item h3 {
+  margin: 0;
+}
+
+.content h1 {
+  font-weight: 100;
+}
+
+.views {
+  display: flex;
+}
+
+.view {
+  width: calc((90% - 32px) / 3);
+  height: 100px;
+  background: #333333;
+  border-radius: 16px;
+  margin-right: 16px;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.view h1,
+.view h5 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.view h1 {
+  font-weight: bold;
+}
+
+.list-item {
+  width: 90%;
+  padding: 15px;
+  border: 1px solid #dedede;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-collapse: separate;
+}

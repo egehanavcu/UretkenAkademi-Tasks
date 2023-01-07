@@ -1,0 +1,23 @@
+.settings-button {
+  width: 20%;
+}
+
+.form-group > * {
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 40%;
+  height: 50px;
+  padding: 16px;
+}
+
+::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
