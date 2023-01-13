@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: #4b5842;
+}
+
+.centered-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav.header {
+  background: #4b5842;
+  display: flex;
+  justify-content: center;
+}
+
+nav.header h2 {
+  color: #ffffff;
+  border-bottom: 3px solid #627256;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.pomodoro-timer {
+  width: 100%;
+  max-width: 500px;
+  padding: 64px;
+  background: #c7d59f;
+  color: #3b5249;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-left h1 {
+  display: inline-block;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 0.2rem;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1.arrow-button {
+  color: #6b8f71;
+}
+
+.button {
+  background: #3b5249;
+  color: #bec5ad;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  padding: 16px 64px;
+  border: none;
+  box-shadow: #a4b494 8px 8px 0px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.button:active {
+  margin-left: 8px;
+  box-shadow: none;
+}
