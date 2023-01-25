@@ -10,7 +10,6 @@ const minuteDown = document.querySelector("#minute-down");
 const secondDown = document.querySelector("#second-down");
 
 const startButton = document.querySelector("#start");
-const stopButton = document.querySelector("#stop");
 let timeLeft = 0;
 
 let secondInterval = null;
