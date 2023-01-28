@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.center-vh {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-size: 4rem;
+  text-align: center;
+  border-bottom: 15px solid #fcfafa;
+}
