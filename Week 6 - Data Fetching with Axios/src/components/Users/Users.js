@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import User from "./User";
 import "./Users.css";
 
 class Users extends Component {
@@ -38,16 +39,13 @@ class Users extends Component {
 
   render() {
     return (
-      <div>
+      <ul>
         {this.emptyListToZero(
           this.state.users.map((user) => (
-            <li key={user.id} className="user">
-              <div>{user.username}</div>
-              <div>{user.name}</div>
-            </li>
+            <User key={user.id} username={user.username} name={user.name} />
           ))
         ) || "Loading..."}
-      </div>
+      </ul>
     );
   }
 }

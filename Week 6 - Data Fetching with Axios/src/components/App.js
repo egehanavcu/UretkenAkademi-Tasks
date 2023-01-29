@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Container from "./Container";
-import Users from "./Users";
-
+import Container from "./UI/Container";
+import Users from "./Users/Users";
+import User from "./Users/User";
 import "./App.css";
 
 class App extends Component {
@@ -11,17 +11,10 @@ class App extends Component {
       <div className="center-vh">
         <h1>Users</h1>
         <Container>
-          <ul>
-            <li className="user">
-              <div>Username</div>
-              <div>Name</div>
-            </li>
-          </ul>
+          <User username="Username" name="Name" />
         </Container>
         <Container>
-          <ul>
-            <Users />
-          </ul>
+          <Users />
         </Container>
       </div>
     );
