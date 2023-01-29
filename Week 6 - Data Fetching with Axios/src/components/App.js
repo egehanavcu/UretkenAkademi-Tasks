@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import Container from "./components/Container";
-import Users from "./components/Users";
+import Container from "./Container";
+import Users from "./Users";
 
 import "./App.css";
 

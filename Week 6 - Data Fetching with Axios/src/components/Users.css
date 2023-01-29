@@ -12,3 +12,7 @@ li {
   margin-bottom: 0.3rem;
   padding: 0 2rem;
 }
+
+li:nth-child(even) {
+  color: #f0eff4;
+}

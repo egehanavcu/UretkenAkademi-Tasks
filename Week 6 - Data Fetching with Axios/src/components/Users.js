@@ -9,25 +9,20 @@ class Users extends Component {
     this.state = { users: [] };
   }
 
-  getUsers = () => {
-    axios
-      .get("http://jsonplaceholder.typicode.com/users")
-      .then((response) => {
-        let fetchedUsers = [];
-        for (const [index, userData] of response.data.entries()) {
-          fetchedUsers.push({
-            id: index,
-            username: userData.username,
-            name: userData.name,
-          });
-          setTimeout(() => {
-            this.setState({ users: fetchedUsers });
-          }, 1000);
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  fetchUsers = () => {
+    axios.get("http://jsonplaceholder.typicode.com/users").then((response) => {
+      let fetchedUsers = [];
+      for (const [index, userData] of response.data.entries()) {
+        fetchedUsers.push({
+          id: index,
+          username: userData.username,
+          name: userData.name,
+        });
+        setTimeout(() => {
+          this.setState({ users: fetchedUsers });
+        }, 1000);
+      }
+    });
   };
 
   emptyListToZero = (list) => {
@@ -38,7 +33,7 @@ class Users extends Component {
   };
 
   componentDidMount() {
-    this.getUsers();
+    this.fetchUsers();
   }
 
   render() {
