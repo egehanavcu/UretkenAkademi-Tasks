@@ -2,7 +2,13 @@ import React, { Component } from "react";
 import axios from "axios";
 
 import User from "./User";
-import "./Users.css";
+import styled from "styled-components";
+
+const Ul = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
 
 class Users extends Component {
   constructor() {
@@ -39,13 +45,13 @@ class Users extends Component {
 
   render() {
     return (
-      <ul>
+      <Ul>
         {this.emptyListToZero(
           this.state.users.map((user) => (
             <User key={user.id} username={user.username} name={user.name} />
           ))
         ) || "Loading..."}
-      </ul>
+      </Ul>
     );
   }
 }
