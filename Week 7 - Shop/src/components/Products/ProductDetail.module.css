@@ -1,0 +1,55 @@
+.detail {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.detail .tag {
+  color: #537ecf;
+}
+
+.detail img {
+  display: flex;
+  max-height: 450px;
+  object-fit: contain;
+  text-align: center;
+  justify-self: center;
+  padding: 2rem;
+}
+
+.bg {
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+.pricestar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail h1,
+.detail h3,
+.detail h4 {
+  margin: 0;
+}
+
+.detail h3.title {
+  font-size: 2rem;
+}
+
+.detail h3.rating {
+  color: #484848;
+}
+
+input[type="button"] {
+  padding: 1rem 3rem;
+  border: 0;
+  border-radius: 4px;
+  background: #dd0426;
+  color: white;
+  font-weight: bold;
+}
