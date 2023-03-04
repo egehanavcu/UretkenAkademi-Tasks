@@ -26,7 +26,7 @@ function App() {
             icon: <img src={fetchedData.image} width="20px" height="20px" />,
             name: fetchedData.name,
             symbol: fetchedData.symbol.toUpperCase(),
-            current_price: fetchedData.current_price,
+            current_price: `$ ${fetchedData.current_price}`,
             price_change_percentage_24h: (
               <span
                 style={{
